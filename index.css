@@ -1,0 +1,59 @@
+@media (max-width: 767.98px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+    font-family: roboto;
+  }
+  header {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+  }
+  .logo {
+    width: 197px;
+    display: flex;
+    justify-content: center;
+  }
+  header img {
+    margin-top: 14px;
+    height: 36px;
+    gap: 10px;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+  .lieu {
+    width: 100%;
+    background-color: #EAEAEA;
+  }
+  header p {
+    width: 100%;
+    gap: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    font-style: roboto;
+  }
+  .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .restaurants-card {
+    gap: 18px;
+  }
+  .card {
+    border: 1px solid black;
+  }
+  img {
+    width: 100%;
+    height: 231px;
+    top: -57px;
+    left: -3px;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
