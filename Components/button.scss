@@ -1,0 +1,23 @@
+@mixin button-accueil {
+    border-radius: 50px 50px;
+    width: 218px;
+    height: 50px;
+    background: colors.$light-gradient;
+    color: colors.$light-white;
+    font-weight: 500;
+    font-size: 16px;
+    border: none;
+    margin-top: 20px;
+    box-shadow: 0px 4px 10px 0px colors.$light-black;
+  }
+
+  @mixin button-card {
+    width: 186px;
+      height: 50px;
+      border-radius: 25px;
+      background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+      color: #FFFFFF;
+      font-size: 16px;
+      font-weight: 500;
+      border: 0;
+    }
