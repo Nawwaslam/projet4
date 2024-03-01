@@ -18,82 +18,6 @@
     margin: 0;
     font-family: fonts.$font-text;
   }
-  .loader__styled {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    background-color: #7E7E7E;
-    animation: loader__styled 3s ease-in-out 1s infinite forwards;
-}
-@keyframes loader__styled {
-  /* UNE FOIS */
-  0% {
-      opacity: 1;
-  }
-  10% {
-      opacity: 0.9;
-  }
-  20% {
-      letter-spacing: 1em;      
-      opacity: 0.8;
-  }
-  30% {
-      opacity: 0.7;
-  }
-  40% {
-    letter-spacing: 1em;
-      opacity: 0.6;
-  }
-  50% {
-      opacity: 0.5;
-  }
-  60% {
-    letter-spacing: 1em;
-      opacity: 0.4;
-  }
-  70% {
-      letter-spacing: 1em;
-      opacity: 0.3;
-  }
-  80% {
-    letter-spacing: 1em;
-    opacity: 0.2;
-  }
-  90% {
-      opacity: 0;
-      width: 100%;
-      height: 100%;
-  }
-  /* FIN */
-  100% {
-      opacity: 0;
-      width: 0%;
-      height: 0%;
-  }
-}
-@keyframes hide {
-  0% { opacity: 1; }
-  100% { opacity: 0; z-index: -999;}
-}
-body {
-  animation: disable-scroll 3000ms;
-}
-@keyframes disable-scroll {
-  0% { overflow: hidden; height: 100%;} 
-  99% { overflow: hidden; height: 100%;}
-  100% { overflow: visible; height: auto;}
-}
-.loader__container {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  z-index: 999;
-  height: 100%;
-  animation: hide 1s linear 2s 1 normal forwards;
-}
   /* HEADER */
   header {
     width: 100%;
@@ -139,22 +63,22 @@ body {
     padding: 20px;
     padding-bottom: 40px
   }
-  @include button-accueil;
-  /*.hero button {
+  /* @include button-accueil; */
+ .hero button {
     border-radius: 50px;
     width: 218px;
     height: 50px;
-    background: colors.$light-gradient;
+    background: black;
     color: colors.$light-white;
     font-weight: 500;
     font-size: 16px;
     border: none;
     margin-top: 20px;
-    box-shadow: 0px 4px 10px 0px colors.$light-black;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.15);
     &:hover {
       opacity: 0.7;
     }
-  }*/
+  }
   /* FONCTIONNEMENT */
   .fonction-title {
     display: flex;
@@ -272,7 +196,7 @@ body {
   .heart .fa-solid.fa-heart:active {
     opacity: 1;
     display: flex;
-    color: colors.$light-gradient;
+    color: black;
   }
   /* FOOTER */
   footer {
@@ -304,7 +228,6 @@ body {
   letter-spacing: 0em;
 }
 .informations-icon {
-  display: flex;
   color: colors.$light-white;
   font-size: 16px;
   left: 52px;
@@ -364,22 +287,22 @@ i .fa-solid {
   h1 {
     font-size: 40px;
   }
-  @include button-accueil;
-  /*.hero button {
+  /*@include button-accueil;*/
+  .hero button {
     border-radius: 50px;
     width: 218px;
     height: 50px;
-    background: colors.$light-gradient;
+    background: black;
     color: colors.$light-white;
     font-weight: 500;
     font-size: 16px;
     border: none;
     margin-top: 20px;
-    box-shadow: 0px 4px 10px 0px colors.$light-black;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.15);
     &:hover {
       opacity: 0.7;
     }
-  }*/
+  }
   /*FONCTION*/
   .fonction {
     display: flex;
@@ -454,6 +377,8 @@ i .fa-solid {
     position: relative;
   }
   .card-content {
+    display: flex;
+    justify-content: space-between;
     margin: 13px 18px;
   }
   .card-txt {
@@ -473,7 +398,7 @@ i .fa-solid {
   }
   .heart .fa-regular.fa-heart {
   position: absolute;
-  display: flex;
+  right: 5%;
   font-size: 22px;
   opacity: 1;
   }
@@ -482,14 +407,14 @@ i .fa-solid {
 }
 .heart .fa-solid.fa-heart {
   position: absolute;
-  display: flex;
+  right: 5%;
   font-size: 22px;
   opacity: 0;
 }
 .heart .fa-solid.fa-heart:active {
   opacity: 1;
   display: flex;
-  color: colors.$light-gradient;
+  color: black;
 }
 /*FOOTER*/
 footer {
@@ -521,14 +446,18 @@ footer {
   padding: 22px 25px;
   list-style-type: none;
   display: flex;
-  gap: 12px;
+  gap: 9px;
   margin: 0;
+}
+.footer_li {
+  display: flex;
+  gap: 4px;
 }
 .informations-icon {
   display: flex;
   color: colors.$light-white;
   font-size: 16px;
-  gap: 10px;
+  gap: 4px;
 }
 .mailto {
   color: colors.$light-white;
